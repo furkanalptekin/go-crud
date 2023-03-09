@@ -1,0 +1,25 @@
+GET http://localhost:3000/posts
+
+###
+GET http://localhost:3000/posts/4
+
+###
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "title": "test title",
+    "body": "test body"
+}
+
+###
+PUT http://localhost:3000/posts/4
+Content-Type: application/json
+
+{
+    "title": "test title update",
+    "body": "test body update"
+}
+
+###
+DELETE http://localhost:3000/posts/1
